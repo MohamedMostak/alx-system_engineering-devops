@@ -1,2 +1,2 @@
 #!/bin/bash
-printf '%s\n' ./* | LC_COLLATE=C sort -k1.2n -k1 | sed -e 's/^\.\///' -e 's/\/$/\//' | tr '\n' ',' && printf '\n'
+printf '%s\n' ./* | LC_COLLATE=C sort -k1.2n -k1 | sed -e 's/^\.\///' -e 's/\/$/\//' | tr '\n' ',' printf '\n'
