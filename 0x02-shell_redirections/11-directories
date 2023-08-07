@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Initialize the counter variable
+count=0
+
+# Loop through the contents of the current directory (including hidden)
+for entry in $(ls -A); do
+  # Check if the entry is a directory (excluding "." and "..")
+  if [ -d "$entry" ] && [ "$entry" != "." ] && [ "$entry" != ".." ]; then
+    ((count++))
+  fi
+done
+
+# Display the count
+echo "Number of directories and subdirectories: $count"

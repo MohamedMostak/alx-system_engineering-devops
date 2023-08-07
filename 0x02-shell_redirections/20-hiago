@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "Enter your input:"
+read input
+
+modified_input=$(echo "$input" | tr -d 'cC')
+
+echo "Modified input: $modified_input"
